@@ -1,0 +1,44 @@
+#!/bin/sh
+
+# color escape sequence
+COLOR_BLACK=0
+COLOR_RED=1
+COLOR_GREEN=2
+COLOR_YELLOW=3
+COLOR_BLUE=4
+COLOR_PURPLE=5
+COLOR_CYAN=6
+COLOR_WHITE=7
+
+COLOR_FG=3
+COLOR_BG=4
+
+COLOR_FG_BLACK=$(echo -e "\033[${COLOR_FG}${COLOR_BLACK}m")
+COLOR_FG_RED=$(echo -e "\033[${COLOR_FG}${COLOR_RED}m")
+COLOR_FG_GREEN=$(echo -e "\033[${COLOR_FG}${COLOR_GREEN}m")
+COLOR_FG_YELLOW=$(echo -e "\033[${COLOR_FG}${COLOR_YELLOW}m")
+COLOR_FG_BLUE=$(echo -e "\033[${COLOR_FG}${COLOR_BLUE}m")
+COLOR_FG_PURPLE=$(echo -e "\033[${COLOR_FG}${COLOR_PURPLE}m")
+COLOR_FG_CYAN=$(echo -e "\033[${COLOR_FG}${COLOR_CYAN}m")
+COLOR_FG_WHITE=$(echo -e "\033[${COLOR_FG}${COLOR_WHITE}m")
+
+COLOR_BG_BLACK=$(echo -e "\033[${COLOR_BG}${COLOR_BLACK}m")
+COLOR_BG_RED=$(echo -e "\033[${COLOR_BG}${COLOR_RED}m")
+COLOR_BG_GREEN=$(echo -e "\033[${COLOR_BG}${COLOR_GREEN}m")
+COLOR_BG_YELLOW=$(echo -e "\033[${COLOR_BG}${COLOR_YELLOW}m")
+COLOR_BG_BLUE=$(echo -e "\033[${COLOR_BG}${COLOR_BLUE}m")
+COLOR_BG_PURPLE=$(echo -e "\033[${COLOR_BG}${COLOR_PURPLE}m")
+COLOR_BG_CYAN=$(echo -e "\033[${COLOR_BG}${COLOR_CYAN}m")
+COLOR_BG_WHITE=$(echo -e "\033[${COLOR_BG}${COLOR_WHITE}m")
+
+COLOR_DEFAULT=$(echo -e "\033[0m")
+COLOR_BLIGHT=$(echo -e "\033[1m")
+COLOR_DIM=$(echo -e "\033[2m")
+COLOR_UNDERLINE=$(echo -e "\033[4m")
+COLOR_BLINK=$(echo -e "\033[5m")
+COLOR_INVERT=$(echo -e "\033[7m")
+COLOR_HIDDEN=$(echo -e "\033[8m")
+COLOR_STRIKE=$(echo -e "\033[9m")
+
+COLS=`tput cols`
+ROWS=`tput lines`

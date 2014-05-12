@@ -1,0 +1,16 @@
+#!/bin/sh
+
+source `pwd`/build/scripts/config.sh
+source `pwd`/build/scripts/configure.sh
+
+MAKE_SCRIPT_NAME=make.sh
+
+cxx_version_check
+
+add_script_header
+add_dir_info
+add_source
+add_mkdir
+add_run_script
+
+chmod +x ${MAKE_SCRIPT_NAME}
